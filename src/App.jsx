@@ -13,7 +13,7 @@ export default function App() {
     <div className="min-h-screen flex flex-col">
       <Router>
         <Navbar companyName="Eazee Tech" />
-        <div className="flex-grow"> {/* Ensures dynamic page expansion */}
+        <div className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
