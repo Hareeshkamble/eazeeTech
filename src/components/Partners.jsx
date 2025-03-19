@@ -2,7 +2,8 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import { motion } from "motion/react";
 
-const partners = [
+// New  Build
+const partners = [ 
   { id: 1, name: "Partner A", logo: "/pics/logo.png" },
   { id: 6, name: "Partner F", logo: "/pics/1.jpg" },
   { id: 3, name: "Partner C", logo: "/pics/bmw.png" },
