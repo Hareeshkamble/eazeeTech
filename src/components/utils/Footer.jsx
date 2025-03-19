@@ -2,7 +2,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsGithub, BsDribbble, BsWhatsapp, B
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-200 text-black py-8 px-6">
+    <footer className="bg-gray-200 text-black py-8 px-6 ">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
         
 
@@ -36,7 +36,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <div className="text-center text-sm text-gray-500 mt-6 border-t border-gray-700 pt-4">
-        &copy; {new Date().getFullYear()} Your Company. All Rights Reserved.
+        &copy; {new Date().getFullYear()} Eazee Tech. All Rights Reserved.
       </div>
     </footer>
   );

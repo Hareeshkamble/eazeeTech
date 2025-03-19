@@ -8,28 +8,28 @@ export default function HomeProducts() {
       id: 1,
       name: "Self-service kiosks Touchscreen POS System",
       description: "A customizable menu showcase with groupings, modifiers, an editable shopping cart, loyalty system, and advertising while idle management modules are supported.",
-      price: 399,
+
       image: "/pics/1.jpg",
     },
     {
       id: 2,
       name: "All-in-One Touchscreen POS System",
       description: "An all-in-one touchscreen POS system designed for fast and efficient transactions. Featuring a high-resolution display, smooth touchscreen interface, and Windows OS compatibility.",
-      price: 599.99,
+
       image: "/pics/pic1bg.png",
     },
     {
       id: 3,
       name: "Low Price POS Touch Screen POS Machine/ Cash Register",
       description: "A cost-effective POS Touch Screen Machine with cash register functionality.",
-      price: 411.30,
+
       image: "/pics/pic2bg.png",
     },
     {
       id: 4,
       name: "SPOS-1401 Android 14 Inch POS for Restaurant",
       description: "14-inch high brightness LCD screen with multi-point projected capacitive touch panel.",
-      price: 199.99,
+
       image: "/pics/pic3.jpeg",
     },
   ];
@@ -87,9 +87,9 @@ export default function HomeProducts() {
 
 
                 <div className="flex items-center justify-between mt-4">
-                  <span className="text-lg font-bold text-gray-900">${product.price.toFixed(2)}</span>
+                  {/* <span className="text-lg font-bold text-gray-900">${product.price.toFixed(2)}</span> */}
                   <motion.button
-                    className="px-4 py-2 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition"
+                    className="px-4 py-2 bg-blue-600 w-full text-white text-sm rounded-lg hover:bg-blue-700 transition"
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                   >
@@ -102,7 +102,7 @@ export default function HomeProducts() {
         </motion.div>
       </div>
      <div className=" flex items-end justify-center m-2 mb-0">
-     <Button/>
+     <Button products="products"/>
      </div>
     </section>
   );

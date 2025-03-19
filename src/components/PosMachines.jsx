@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "motion/react";
+import { Link } from "react-router-dom";
 
 export default function PosMachines() {
   return (
@@ -22,13 +23,15 @@ export default function PosMachines() {
             these kiosks reduce wait times and improve customer satisfaction. Customize software 
             integration to match your business needs effortlessly.
           </p>
-          <motion.button
+          <Link to="/products" className="cursor-pointer">
+          <motion.button 
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow-md transition"
           >
-            Learn More
+           Learn More
           </motion.button>
+          </Link>
         </div>
 
         {/* Image Section */}

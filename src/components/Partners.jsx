@@ -3,14 +3,14 @@ import Marquee from "react-fast-marquee";
 import { motion } from "motion/react";
 
 const partners = [
-  { id: 1, name: "Partner A", logo: "/pics/bmw.png" },
+  { id: 1, name: "Partner A", logo: "/pics/logo.png" },
   { id: 6, name: "Partner F", logo: "/pics/1.jpg" },
   { id: 3, name: "Partner C", logo: "/pics/bmw.png" },
   { id: 7, name: "Partner G", logo: "/pics/1.jpg" },
-  { id: 4, name: "Partner D", logo: "/pics/bmw.png" },
+  { id: 4, name: "Partner D", logo: "/pics/logo.png" },
   { id: 5, name: "Partner E", logo: "/pics/1.jpg" },
   { id: 2, name: "Partner B", logo: "/pics/bmw.png" },
-  { id: 6, name: "Partner F", logo: "/pics/1.jpg" },
+  { id: 6, name: "Partner F", logo: "/pics/logo.png" },
   { id: 5, name: "Partner E", logo: "/pics/bmw.png" },
   { id: 7, name: "Partner G", logo: "/pics/1.jpg" },
 ];
@@ -36,7 +36,7 @@ export default function Partners() {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 lg:h-24 lg:w-24 object-center rounded-[50%] "
+                className="h-20 lg:h-24 lg:w-24 object-cover rounded-[50%] "
               />
             </motion.div>
           <p className="font-semibold text-gray-400">{partner.name}</p>

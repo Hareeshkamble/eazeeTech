@@ -11,7 +11,7 @@ import NewsletterSubscription from "./utils/NewsLetter";
 
 export default function Home() {
   return (
-    <div>
+    <div className=""> 
       <Carousel />
       <PosMachines />
       <HomeProducts />

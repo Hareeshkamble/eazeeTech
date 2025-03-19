@@ -1,11 +1,12 @@
 import React from 'react'
 import "./Button.css"
 
-export default function () {
+export default function ({products}) {
   return (
     <span className='flex items-center justify-center'>
 
-<button href="#" className="button btn m-4" >
+<a href={`/${products}`}>
+<button  className="button btn m-4" >
   <span className="button__icon-wrapper">
     <svg
       viewBox="0 0 14 15"
@@ -35,6 +36,7 @@ export default function () {
   </span>
   Explore All
 </button>
+</a>
 
     </span>
   )

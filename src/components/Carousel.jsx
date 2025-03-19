@@ -27,9 +27,12 @@ export default function Carousel() {
     <>
       <AliceCarousel
         mouseTracking
+        autoPlay
+        autoPlayInterval={3000}
+        infinite
         items={items}
-        disableSlideInfo={true}
         disableButtonsControls
+        // disableDotsControls
         
       />
     </>
